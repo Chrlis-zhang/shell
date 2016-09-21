@@ -1,0 +1,5 @@
+#!/bin/bash
+
+H=`cat /home/chrlis/1.txt | awk '{$1="";print $0}' | while read line; do echo $line; done`
+
+echo -e  "$H\n"
